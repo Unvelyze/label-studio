@@ -1,6 +1,6 @@
 {
-  "message": "chore: Update liveContent.json (#6874)",
-  "commit": "40f095ad8fefbdd93cc334c7c8c8d9593a5bf764",
-  "date": "2025-01-08T14:42:22.000Z",
+  "message": "ci: PLT-628: Update pyproject.toml (#6912)",
+  "commit": "574f0e5936da7a9a84271a9d04a8af66ab0d2212",
+  "date": "2025-01-16T12:30:42.000Z",
   "branch": "develop"
 }
