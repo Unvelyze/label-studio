@@ -51,18 +51,6 @@ export const FF_DEV_3377 = "fflag_fix_front_dev_3377_image_regions_shift_on_resi
 export const FF_DEV_3391 = "fflag_fix_front_dev_3391_interactive_view_all";
 
 /**
- * Addresses the memory leak issue in Taxonomy with Repeater
- * @link https://app.launchdarkly.com/default/production/features/fflag_fix_front_dev_3617_taxonomy_memory_leaks_fix
- */
-export const FF_DEV_3617 = "fflag_fix_front_dev_3617_taxonomy_memory_leaks_fix";
-
-/**
- * Fixing maxUsages prop of *labels on region creation.
- * @link https://app.launchdarkly.com/default/test/features/fflag_fix_front_dev_3666_max_usages_on_region_creation_171122_short
- */
-export const FF_DEV_3666 = "fflag_fix_front_dev_3666_max_usages_on_region_creation_171122_short";
-
-/**
  * Fixing "Auto Detect" tool undo functionality and bugs with skipNextUndoState.
  * @link https://app.launchdarkly.com/default/production/features/fflag_fix_front_dev_1284_auto_detect_undo_281022_short
  */
@@ -152,12 +140,6 @@ export const FF_LSDV_4988 = "fflag_fix_front_lsdv_4988_dynamic_no_label_120523_s
 export const FF_LSDV_4930 = "fflag_fix_front_lsdv_4930_selection_tool_fixes_240423_short";
 
 /**
- * Restore "hide all regions" button functionality in the outliner
- * @link https://app.launchdarkly.com/default/production/features/fflag_fix_front_lsdv_4992_hide_all_regions_04052023_short
- */
-export const FF_LSDV_4992 = "fflag_fix_front_lsdv_4992_hide_all_regions_04052023_short";
-
-/**
  * Resetting shared stores on task change to correctly generate dynamic children
  * @see: fflag_fix_front_dev_3617_taxonomy_memory_leaks_fix: To enable shared store
  * @link https://app.launchdarkly.com/default/production/features/fflag_fix_front_lsdv_4998_missed_dynamic_children_030523_short
@@ -206,6 +188,12 @@ export const FF_REVIEWER_FLOW = "fflag_feat_all_leap_1081_reviewer_flow_updates"
 export const FF_CUSTOM_SCRIPT = "fflag_feat_all_leap_883_custom_script_270524_short";
 
 /**
+ * Self Serve
+ * @link https://app.launchdarkly.com/default/test/features/fflag_feat_front_leap_482_self_serve_short/
+ */
+export const FF_SELF_SERVE = "fflag_feat_front_leap_482_self_serve_short";
+
+/**
  * It adds functionality of bulk annotation
  */
 export const FF_BULK_ANNOTATION = "fflag_feat_all_leap_1181_bulk_annotation_short";
@@ -217,6 +205,8 @@ export const FF_BULK_ANNOTATION = "fflag_feat_all_leap_1181_bulk_annotation_shor
 export const FF_LEAP_1173 = "fflag_feat_front_leap_1173_disable_postpone_skip_short";
 
 export const FF_PER_FIELD_COMMENTS = "fflag_feat_all_leap_1430_per_field_comments_100924_short";
+
+export const FF_IMAGE_MEMORY_USAGE = "fflag_feat_front_optic_1479_improve_image_tag_memory_usage_short";
 
 Object.assign(window, {
   APP_SETTINGS: {

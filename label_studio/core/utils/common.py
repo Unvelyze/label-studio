@@ -14,6 +14,7 @@ import time
 import traceback as tb
 import uuid
 from collections import defaultdict
+from copy import deepcopy
 from functools import wraps
 from typing import Any, Callable, Generator, Iterable, Mapping, Optional
 
@@ -100,6 +101,10 @@ def custom_exception_handler(exc, context):
         'detail': 'Unknown error',  # default value
         'exc_info': None,
     }
+
+    if hasattr(exc, 'display_context'):
+        response_data['display_context'] = deepcopy(exc.display_context)
+
     # try rest framework handler
     response = exception_handler(exc, context)
     if response is not None:
@@ -492,6 +497,9 @@ def collect_versions(force=False):
                 sentry_sdk.set_tag('version-' + package, result[package]['version'])
             if 'commit' in result[package]:
                 sentry_sdk.set_tag('commit-' + package, result[package]['commit'])
+
+    # edition type
+    result['edition'] = settings.VERSION_EDITION
 
     settings.VERSIONS = result
     return result
