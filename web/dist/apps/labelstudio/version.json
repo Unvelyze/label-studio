@@ -1,6 +1,6 @@
 {
-  "message": "refactor: OPTIC-1557: Remove Stale Feature Flag - fflag_fix_front_lsd… (#6997)",
-  "commit": "d2ee3a28547ff200240de7599ebfd46882b38cf2",
-  "date": "2025-02-04T19:34:20.000Z",
+  "message": "fix: LEAP-1829: Fix \"No LabelModel in NodeView\" error in Sentry (#7067)",
+  "commit": "687f3f9272c03a49ea1d39f644c90a892ae2f46d",
+  "date": "2025-02-12T23:13:22.000Z",
   "branch": "develop"
 }
